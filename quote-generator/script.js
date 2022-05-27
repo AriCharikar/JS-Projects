@@ -26,7 +26,7 @@ function newQuote() {
 
 async function getQuotes() {
     loading();
-    const apiURL = "https://type.fit/api/quotes";
+    const apiURL = `https://type.fit/api/quotes`;
     try {
         const response = await fetch(apiURL);
         apiQuotes = await response.json();
